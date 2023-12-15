@@ -30,3 +30,8 @@ usage: split_screen_recording_by_monitor [-h] --input-video-filepath PATH [--out
 │                   (default: /home/tylerlum)                  │
 ╰──────────────────────────────────────────────────────────────╯
 ```
+
+# Limitations
+
+* Assumes that the video was captured with the same monitor setup as the monitor setup running this function (this assumption makes it easy to decide where the cropping bounds should be)
+* Assumes that the monitors will be layed out horizontally or vertically (cannot currently handle grids of monitors)
